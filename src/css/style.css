@@ -101,11 +101,19 @@ img {
 /* Cтили для главного экрана */
 .hero {
   padding: 50px 0;
+  background-color: #f5f5f5;
 }
 
 .hero-image {
+  width: 570px;
+  height: 488px;
   -webkit-box-shadow: 5px 6px 10px 0px #ccc;
           box-shadow: 5px 6px 10px 0px #ccc;
+}
+
+.hero-image__pic {
+  width: 100%;
+  height: auto;
 }
 
 .hero-block {
@@ -117,7 +125,6 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 139px;
 }
 
 .hero-text__title {

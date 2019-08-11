@@ -97,10 +97,9 @@ img {
   display: inline-block;
   color: #333333;
   font-size: 21px;
+  font-weight: 600;
   text-decoration: none;
   margin-top: 10px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -150,8 +149,7 @@ img {
   font-weight: 600;
   line-height: 55px;
   margin-bottom: 40px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-family: 'Museo Sans Light';
 }
 
 .hero-text__subtitle {

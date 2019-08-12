@@ -299,6 +299,7 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  margin-top: 10px;
 }
 
 .offer__subtitle {
@@ -319,17 +320,24 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 33px;
 }
 
 .offer__call {
-  display: block;
-  max-width: 240px;
-  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .offer__manager {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 250px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 38px;
 }
 
 .offer__contact {
@@ -337,6 +345,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.offer__contacts {
+  font-size: 15px;
+  font-weight: 400;
 }
 
 @media (max-width: 1200px) {

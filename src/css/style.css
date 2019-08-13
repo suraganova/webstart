@@ -154,16 +154,11 @@ img {
   background-color: #f5f5f5;
 }
 
-.hero-image {
-  width: 570px;
-  height: 488px;
-  -webkit-box-shadow: 5px 6px 10px 0px #ccc;
-          box-shadow: 5px 6px 10px 0px #ccc;
-}
-
 .hero-image__pic {
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 5px 6px 10px 0px #ccc;
+          box-shadow: 5px 6px 10px 0px #ccc;
 }
 
 .hero-block {
@@ -180,8 +175,7 @@ img {
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 600;
-  line-height: 55px;
+  font-weight: 700;
   margin-bottom: 40px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -215,7 +209,7 @@ img {
 }
 
 .hero-list__image {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   border: 2px solid #ffd200;
   display: -webkit-box;
@@ -254,11 +248,18 @@ img {
   .hero-text {
     font-size: 24px;
     line-height: 1.4;
-    margin-bottom: 15px;
   }
-  .hero__subtitle {
+  .hero-text__title {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
+  .hero-text__subtitle {
     font-size: 16px;
-    margin-bottom: 34px;
+    margin-bottom: 28px;
+  }
+  .hero-list {
+    margin-bottom: 38px;
   }
   .hero-list__item {
     margin-bottom: 30px;
@@ -297,9 +298,8 @@ img {
 
 .offer__title {
   max-width: 360px;
-  line-height: 35px;
+  line-height: 25px;
   margin-bottom: 24px;
-  margin-top: 10px;
 }
 
 .offer__subtitle {
@@ -372,6 +372,17 @@ img {
 @media (max-width: 768px) {
   .offer {
     background: #fff;
+    padding: 53px 0 56px 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .offer__call {
+    display: block;
+  }
+  .offer__contacts {
+    margin-top: 10px;
   }
   .offer-block {
     width: 100%;

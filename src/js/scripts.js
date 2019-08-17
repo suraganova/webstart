@@ -6,7 +6,11 @@ $('#offer-form').on('submit', function(event) {
     type: 'POST',
     data: $(this).serialize(),
     success: function(data) {
-      console.log(data);   
+      $('.success').html(data + ', Ваша формула отправлена.')   
+    },
+    error: function(jqXHR, textStatus){
+      console.log(jqXHR + ': ' + textStatus);    
     }
+    
   });    
 });

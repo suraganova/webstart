@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ремонт квартир</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -97,6 +98,9 @@
                       <input type="tel" name="userphone" class="input offer__input"placeholder="Ваш телефон">
                       <button class="button offer__button">Получить бесплатный дизайн-проект</button>    
                     </form>
+                    <div class="success">
+                        <span>Ваша заявка принята!</span>
+                    </div>
                     <div class="offer__call">
                         <span class="offer__manager">Наш менеджер перезвонит Вам в течение 60 секунд</span>
                         <div class="offer__phone">
@@ -108,6 +112,36 @@
             </div>
             <!-- /.container -->
         </section>
+        <section class="section portfolio">
+            <div class="container">
+                <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2>
+                <div class="slider">
+                    <div class="slider__item"><img src="img/portfolio/slider-1.png" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img src="img/portfolio/slider-2.png" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img src="img/portfolio/slider-3.png" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img src="img/portfolio/slider-1.png" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img src="img/portfolio/slider-2.png" alt=""></div>
+                    <!-- /.slider__item -->
+                    <div class="slider__item"><img src="img/portfolio/slider-3.png" alt=""></div>
+                    <!-- /.slider__item -->
+                </div>
+                <div class="arrows portfolio__arrows">
+                  <div class="arrows__left">
+                    <img src="img/portfolio/left-arrow.png" alt="">  
+                  </div>
+                  <div class="arrows__right">
+                     <img src="img/portfolio/right-arrow.png" alt="">
+                  </div>    
+                </div>
+                <!-- /.slider -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section portfolio -->
         <!-- /.offer -->
     </main>
 
@@ -126,6 +160,26 @@
   crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        responsive: [
+          {
+            breakpoint: 0,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+      }
+      }
+        ]      
+      });
+    });
+  </script>
 
 
 </body>

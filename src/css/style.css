@@ -455,4 +455,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.slider__image {
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */

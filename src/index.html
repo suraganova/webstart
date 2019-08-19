@@ -96,11 +96,9 @@
                     <form action="#" id="offer-form" class="form offer__form">
                       <input type="text" name="username" class="input offer__input"placeholder="Ваше имя">
                       <input type="tel" name="userphone" class="input offer__input"placeholder="Ваш телефон">
-                      <button class="button offer__button">Получить бесплатный дизайн-проект</button>    
+                      <button class="button offer__button" id="proekt">Получить бесплатный дизайн-проект</button>    
                     </form>
-                    <div class="success">
-                        <span>Ваша заявка принята!</span>
-                    </div>
+                    <div class="success"></div>
                     <div class="offer__call">
                         <span class="offer__manager">Наш менеджер перезвонит Вам в течение 60 секунд</span>
                         <div class="offer__phone">
@@ -152,6 +150,8 @@
     </div>
         <!--modal-dialog-->
   </div>
+
+  </div>
   <!--<script src="js/main.js"></script>-->
 
   <script
@@ -172,10 +172,24 @@
           {
             breakpoint: 0,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-      }
-      }
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
         ]      
       });
     });
